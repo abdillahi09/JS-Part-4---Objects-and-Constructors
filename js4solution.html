@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> JS Part 4 - Assigment One </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body style="background: goldenrod">
+    <h1 style="color: ghostwhite">Constructor is in the console.</h1>
+    <script>
+        // Javascript Part 4 Assignment One Solution
+
+        /* write a Javascript function named createObject */
+        /* which creates object using Object constructor */
+        /* returns object's properties */
+
+        function createObject() {
+            var myObject = new Object();
+            myObject.name = "bala";
+            myObject.height = 180;
+            myObject.aboutYourself = function() {
+                return "I am" + " " + this.name + ". " + "I am" + " " + this.height + " cm height.";
+            }
+            return myObject
+        }
+
+        /* Sets the constructor function into new variable and easily logs to console */
+        var pass = createObject();
+        console.log(pass.aboutYourself());
+    </script>
+</body>
+</html>
